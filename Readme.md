@@ -4,6 +4,19 @@ Unofficial Heroku buildpack: Python + npm dependency resolution
 This is a [Heroku buildpack](http://devcenter.heroku.com/articles/buildpacks) for Python apps.
 It uses [virtualenv](http://www.virtualenv.org/) and [pip](http://www.pip-installer.org/).
 
+WARNING: Don't use this buildpack for new projects
+===
+
+There is a better way to do this now, using the `bin/post_compile` hook.
+
+I do not use this buildpack for my projects anymore. You'll need to customize the linked files, but here is a [gist with my new set up](https://gist.github.com/jiaaro/e76a776852a68106340a)
+
+Notable changes from how this build pack works:
+
+ 1. You have to move your npm requirements into the `post_compile` hook
+ 2. if you were using the build pack's `post_deploy` hook, you'll need to call it from the officially supported `post_compile` hook
+
+
 Differences
 -----------
 
