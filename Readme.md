@@ -9,7 +9,7 @@ WARNING: Don't use in new projects
 
 This buildpack should not be used for new projects. There is a better way to install nodejs dependencies now, using the `bin/post_compile` hook, or with [the multi-buildpack](https://github.com/ddollar/heroku-buildpack-multi)
 
-I do not use this buildpack for my projects anymore. You'll need to customize the linked files, but here is a [gist with my new set up](https://gist.github.com/jiaaro/e76a776852a68106340a)
+I do not use this buildpack for my projects anymore. Here is a [gist with my new set up](https://gist.github.com/jiaaro/e76a776852a68106340a) (you'll have to customize the files a bit though)
 
 Notable changes from how this build pack works:
 
